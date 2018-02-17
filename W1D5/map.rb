@@ -71,6 +71,7 @@ if __FILE__ == $PROGRAM_NAME
 
   map.assign("a", 1)
   map.assign("b", 2)
+  p map.show
   map.assign("c", 3)
   p map.show
 
