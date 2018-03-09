@@ -1,0 +1,42 @@
+
+
+.hamburger-dropdown {
+  display: none;
+}
+
+@media all and (max-width: 900px) {
+  nav ul {
+    display: none;
+  }
+  .hamburger-dropdown {
+    display: block;
+  }
+  .hamburger-dropdown > li {
+    background: url(../images/hamburger.png);
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+
+    position: relative;
+    cursor: pointer;
+  }
+  .hamburger-dropdown ul {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: black 5px 5px 10px;
+  }
+
+  /* This is how we create pure css dropdown effects. No JS required. */
+  .hamburger-dropdown:hover ul {
+    display: flex;
+    background: #ffffff;
+  }
+
+  .hamburger-dropdown ul li:hover a {
+    text-decoration: underline;
+  }
+};
